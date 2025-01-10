@@ -1,13 +1,13 @@
 <html>
-
-<head>
-    <title>
-        First page
-    </title>
-</head>
-
-<body>
-    hello world
-</body>
-
+  <body>
+    <div id="app"></div>
+    <script type="text/javascript">
+        const app = document.getElementById('app');
+        const h1= document.createElement('h1');
+        const text= 'Hello World';
+        const h1Text = document.createTextNode(text);
+        h1.appendChild(h1Text);
+        app.appendChild(h1);
+    </script>
+  </body>
 </html>
