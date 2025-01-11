@@ -1,19 +1,23 @@
 <html>
-
 <body>
     <div id="app"></div>
-    <div id="app1"></div>
     <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/jsx">
-        const domNode = document.getElementById('app');
-        const root = ReactDOM.createRoot(domNode);
-        root.render(<h1>Hello world</h1>);
-        const domNode1 = document.getElementById('app1');
-        const root1 = ReactDOM.createRoot(domNode1);
-        root1.render(<h3>I am Alaka</h3>);
+        const app = document.getElementById("app")
+        function Header() {
+            return <h1>Hello World</h1>;
+            }
+        function HomePage(){
+            return (
+                <div>
+                    <Header/>
+            </div> 
+          );
+        }
+        const root = ReactDOM.createRoot(app);
+        root.render(<HomePage/>);
     </script>
 </body>
-
-</html>
+</html> 
